@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Web</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/all.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="sideNav">
+    <div class="first-sideNav-div">
+      <div>
+        <img src="/img/myimages/me.jpg" alt="my-picture">
+      </div>
+      <div>
+        <h2>Eng. Abbas Mohammed</h2>
+      </div>
+    </div>
+    <div class="second-sideNav-div">
+      <div class="skill" id="skill-1">
+        <div>
+          <h3>Personal Information</h3>
+        </div>
+        <div class="personal-text" id="pt">
+          <h3>My name is Abbas, I am 31, from Iraq</h3>
+        </div>
+        <div class="plus-btn">
+          <a href="#">
+            <i class="fas fa-plus" id="p1" onclick="p1()"></i>
+          </a>
+        </div>
+        <div class="minus-btn">
+          <a href="#">
+            <i class="fas fa-minus" id="p11" onclick="p11()"></i>
+          </a>
+        </div>
+      </div>
+      <div class="skill" id="skill-2">
+        <div>
+          <h3>Certificate</h3>
+        </div>
+        <div class="certify-text" id="ct">
+          <h3>Computer Technique</h3>
+        </div>
+        <div class="plus-btn">
+          <a href="#">
+            <i class="fas fa-plus" id="p2" onclick="p2()"></i>
+          </a>
+        </div>
+        <div class="minus-btn">
+          <a href="#">
+            <i class="fas fa-minus" id="p22" onclick="p22()"></i>
+          </a>
+        </div>
+      </div>
+      <div class="skill" id="skill-3">
+        <div>
+          <h3>Programinng Language</h3>
+        </div>
+        <div class="language-text" id="lt">
+          <h3>JavaScript</h3>
+        </div>
+        <div class="plus-btn">
+          <a href="#">
+            <i class="fas fa-plus" id="p3" onclick="p3()"></i>
+          </a>
+        </div>
+        <div class="minus-btn">
+          <a href="#">
+            <i class="fas fa-minus" id="p33" onclick="p33()"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="third-sidNav-div">
+      <div>
+        <h6 style="color: snow;font-size: 16px;font-weight: 400;">designed by</h6>
+      </div>
+      <div>
+        <h3 style="color: blanchedalmond;font-size: 18px;font-weight: 500;">Abbas</h3>
+      </div>
+      <div>
+        <i class="fas fa-thumbs-up"></i>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="mainNav" id="mainNav">
+      <div>
+        <h1 id="showTime">Time</h1>
+      </div>
+    </div>
+    <div class="head">
+      <div>
+        <h4 class="title">Task Procedure</h4>
+        <!-- Card -->
+        <div class="card">
+          <!-- Card content -->
+          <div class="card-body">
+            <!-- Title -->
+            <div>
+              <!-- Default input -->
+              <label for="txt-input">Input Text</label>
+              <input type="text" id="txt-input" class="form-control">
+            </div>
+            <div class="btns">
+              <div>
+                <a href="#" class="btn btn-primary" onclick="arr_shift()">Array-Shift</a>
+              </div>
+              <div>
+                <a href="#" class="btn btn-primary" onclick="arr_pop()">Array-pop</a>
+              </div>
+              <div>
+                <a href="#" class="btn btn-primary" onclick="slic()">Slice</a>
+              </div>
+              <div>
+                <a href="#" class="btn btn-primary" onclick="substr()">Substring</a>
+              </div>
+              <div>
+                <a href="#" class="btn btn-primary" onclick="splc()">Splice</a>
+              </div>
+            </div>
+            <div class="output" id="output">
+              output
+            </div>
+          </div>
+        </div>
+        <!-- Card -->
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="/js/myjs.js"></script>
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript">
+    var a = document.getElementById('disc-50');
+    a.onclick = function () {
+      Clipboard_CopyTo("T9TTVSQB");
+      var div = document.getElementById('code-success');
+      div.style.display = 'block';
+      setTimeout(function () {
+        document.getElementById('code-success').style.display = 'none';
+      }, 900);
+    };
+
+    function Clipboard_CopyTo(value) {
+      var tempInput = document.createElement("input");
+      tempInput.value = value;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand("copy");
+      document.body.removeChild(tempInput);
+    }
+  </script>
+</body>
+
+</html>

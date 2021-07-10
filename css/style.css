@@ -1,0 +1,174 @@
+.sideNav{
+    height: 100%;
+    width: 350px;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    background-image: linear-gradient(90deg, #000000 0%, #010129 35%, #00091a 100%);
+}
+.sideNav>div{
+    padding: 20px;
+    margin: 5px;
+}
+.first-sideNav-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.first-sideNav-div>div{
+    padding: 10px;
+}
+.first-sideNav-div img{
+    height:110px; 
+    width: 110px;
+    border: solid 3px whitesmoke;
+    border-radius: 120px;
+}
+.first-sideNav-div h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: floralwhite;
+}
+.second-sideNav-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.second-sideNav-div>div{
+    padding: 15px;
+    margin: 10px;
+}
+.skill{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 300px;
+    background-color:rgb(34, 42, 49);
+    transition: all .1s ease;
+}
+.skill h3{
+    font-size: 18px;
+    font-weight: 400 ;
+    color: snow;
+}
+.skill .fas{
+    color: snow;
+}
+.personal-text{
+    color: snow;
+    position: absolute;
+    top: 60px;
+    visibility: hidden;
+}
+.certify-text{
+    color: snow;
+    position: absolute;
+    top: 60px;
+    visibility: hidden;
+}
+.language-text{
+    color: snow;
+    position: absolute;
+    top: 60px;
+    visibility: hidden;
+}
+.personal-text .certify-text .language-text h3{
+    font-size: 16px;
+    font-weight: 200 ;
+    color: snow; 
+}
+
+.plus-btn{
+    position: absolute;
+    left: 270px;
+    visibility: visible;
+}
+.minus-btn{
+    position: absolute;
+    left: 270px;
+    visibility: hidden;
+}
+.detail{
+    height: 0px;
+    width: 300px;
+    background-color:rgb(34, 42, 49);
+}
+.third-sidNav-div{
+    display: flex;
+    align-items: flex-start;
+    position: fixed;
+    top: 500px;
+}
+.third-sidNav-div>div{
+    padding: 5px;
+    margin-top: 200px;
+}
+.third-sidNav-div .fas{
+    font-size: 15px;
+    color: snow;
+}
+.main{
+    height: 100vh;
+    margin-left: 350px;
+}
+.mainNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    background-color:#D6DBDF;
+    box-shadow: .5px .5px 3px black; 
+}
+.mainNav h1{
+    font-size: 45px;
+    font-weight: 500;
+    color: #17202A;
+}
+.head{
+
+    width: 100%;
+}
+.head>div{
+    padding: 30px;
+    margin: 20px;
+}
+.head .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 540px;
+}
+.title{
+    height: 35px;
+    font-size: 24px;
+    font-weight: 600;
+    box-shadow: 2px 2px 4px darkolivegreen;
+}
+.head .card .card-body .form-control{
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btns>div{
+    margin-top: 100px;
+}
+.output{
+    height: 40px;
+    font-size: 18px;
+    border: solid 1px rgb(0, 0, 68);
+}
+.output{
+    margin-top: 160px;
+}
